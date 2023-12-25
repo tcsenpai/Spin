@@ -1,0 +1,42 @@
+{
+  "appId": "com.electron.yourapp",
+  "name": "yourapp",
+  "version": "1.0.0",
+  "description": "Your description",
+  "main": "main.js",
+  "files": [],
+  "mac": {
+    "target": "dmg",
+    "icon": "path/to.icns",
+    "category": "public.app-category.category"
+  },
+  "win": {
+    "target": "nsis",
+    "icon": "path/to.ico",
+    "requestedExecutionLevel": "highestAvailable"
+  },
+  "linux": {
+    "target": "AppImage",
+    "icon": "path/to.png"
+  },
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard"
+  },
+  "keywords": [
+    "Electron",
+    "Spin",
+    "other keywords"
+  ],
+  "author": "You",
+  "license": "License type",
+  "devDependencies": {
+    "electron": "latest",
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "observable-slim": "^0.1.6"
+  }
+}
